@@ -1,0 +1,37 @@
+#install.packages("KeyboardSimulator")
+
+library(KeyboardSimulator)
+
+x=0.1
+
+mouse.move(x=5000, y=1)
+
+keybd.press('win', hold = TRUE)
+keybd.press('a')
+keybd.release('win')
+Sys.sleep(x)
+keybd.press('tab')
+keybd.press('tab')
+keybd.press('tab')
+keybd.press('tab')
+keybd.press('tab')
+keybd.press('tab')
+keybd.press('tab')
+keybd.press('tab')
+Sys.sleep(x)
+keybd.press('left')
+Sys.sleep(x)
+keybd.press('left')
+Sys.sleep(x)
+keybd.press('left')
+Sys.sleep(x)
+keybd.press('right')
+Sys.sleep(x)
+keybd.press('right')
+Sys.sleep(x)
+keybd.press('enter')
+Sys.sleep(1)
+keybd.press('esc')
+Sys.sleep(1)
+
+try(system("rundll32.exe user32.dll,LockWorkStation"))

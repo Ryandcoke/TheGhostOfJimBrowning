@@ -1,0 +1,82 @@
+
+R version 3.5.2 (2018-12-20) -- "Eggshell Igloo"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> #install.packages("KeyboardSimulator")
+> 
+> library(KeyboardSimulator)
+Warning message:
+package 'KeyboardSimulator' was built under R version 3.5.3 
+> 
+> x=0.1
+> 
+> mouse.move(x=5000, y=1)
+> 
+> keybd.press('win', hold = TRUE)
+> keybd.press('a')
+> keybd.release('win')
+> Sys.sleep(x)
+> keybd.press('tab')
+> keybd.press('tab')
+> keybd.press('tab')
+> keybd.press('tab')
+> keybd.press('tab')
+> keybd.press('tab')
+> keybd.press('tab')
+> keybd.press('tab')
+> Sys.sleep(x)
+> keybd.press('left')
+> Sys.sleep(x)
+> keybd.press('left')
+> Sys.sleep(x)
+> keybd.press('left')
+> Sys.sleep(x)
+> keybd.press('right')
+> Sys.sleep(x)
+> keybd.press('right')
+> Sys.sleep(x)
+> keybd.press('enter')
+> Sys.sleep(1)
+> keybd.press('esc')
+> Sys.sleep(2)
+> 
+> 
+> try(system("rundll32.exe user32.dll,LockWorkStation"))
+> 
+> 
+> keybd.press('win', hold = TRUE)
+> keybd.press('r')
+> keybd.release('win')
+> keybd.press('r')
+> keybd.press('u')
+> keybd.press('n')
+> keybd.press('d')
+> keybd.press('l')
+> keybd.press('l')
+> keybd.press('3')
+> keybd.press('2')
+> keybd.press('.')
+> keybd.press('e')
+> keybd.press('x')
+> keybd.press('e')
+> keybd.press(' ')
+Error in keybd.press(" ") : 
+  The 'button' value ' ' is not supported. Available keys are : a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 num0 num1 num2 num3 num4 num5 num6 num7 num8 num9 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 backspace tab enter shift ctrl alt capslock esc pageup pagedown end home left up right down insert space del numlock win / ? .
+Execution halted
